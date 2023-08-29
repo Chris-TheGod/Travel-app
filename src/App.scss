@@ -16,3 +16,29 @@ textarea {
 .Hi {
   color: #000;
 }
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  align-items: center;
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  text-align: left;
+  max-width: 100%;
+}

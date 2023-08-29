@@ -21,20 +21,20 @@ export const Card = () => {
   return (
     <div>
       {tourData ? (
-        <>
-          <div>Our Tours</div>
+        <div className='main-container'>
+          <div className='title'>Our Tours</div>
           {tourData.map(({ image, name, id, info, price }) => (
             <div key={id}>
               {' '}
-              <img src={image} alt='' />
-              <div>{name}</div>
-              <div>{price}</div>
-              <div>{info}</div>
-              <button>Show Less</button>
-              <button>Not interested</button>
+              <img className='image' src={image} alt='' />
+              <div className='name'>{name}</div>
+              <div className='price'>{price}</div>
+              <div className='info'>{info}</div>
+              <button className='show-less'>Show Less</button>
+              <button className='not-interested'>Not interested</button>
             </div>
           ))}
-        </>
+        </div>
       ) : (
         <p>Loading...</p>
       )}
